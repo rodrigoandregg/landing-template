@@ -1,0 +1,30 @@
+{
+  "name": "landing-template",
+  "version": "1.0.0",
+  "description": "template for landing page",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "watch": "sass --watch ./src/sass/:./src/css/",
+    "format": "prettier --write .",
+    "lint": "eslint --fix . --ext .js"
+  },
+  "keywords": [
+    "template",
+    "landing-page"
+  ],
+  "author": "Rodrigo Andre Gutierrez <rodrigoandregutierrez@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

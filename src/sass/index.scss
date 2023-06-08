@@ -1,0 +1,254 @@
+@import 'boxes', 'reset';
+
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  @include flexBox($jc: space-between);
+  width: 100%;
+  top: 0;
+  background-color: $dark;
+  height: 3em;
+  padding: 0 2em;
+  color: $light;
+  position: absolute;
+
+  &__link {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.nav {
+  @include flexBox;
+
+  height: 100%;
+
+  &__btn {
+    @include flexBox;
+    width: 2em;
+    height: 2em;
+    display: none;
+  }
+
+  &__icon {
+    &--close {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @include flexBox;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item {
+    @include flexBox;
+    height: 100%;
+    padding: 1em;
+  }
+
+  &__link {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.social {
+  @include flexBox;
+  height: 100%;
+  gap: 1em;
+
+  &__item {
+    @include flexBox;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: relative;
+}
+
+.intro {
+  @include flexBox($ff: column nowrap, $ai: flex-start, $jc: space-between);
+  width: 100%;
+  margin-top: 3em;
+  padding: 2em;
+  background-color: $dark;
+  color: $light;
+
+  &__heading {
+    @include flexBox($ff: column nowrap, $ai: flex-start);
+    width: 150%;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 0.9;
+  }
+
+  &__span {
+    padding-left: 0;
+
+    &:nth-child(2) {
+      padding-left: 2em;
+    }
+
+    &:nth-child(3) {
+      padding-left: 4em;
+    }
+
+    &--accent {
+      color: $accent;
+    }
+  }
+
+  &__link {
+    @include flexBox;
+    gap: 0.5em;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid $light;
+      width: 18em;
+      height: 18em;
+      border-radius: 16em;
+    }
+  }
+}
+
+.link {
+  @include flexBox;
+  gap: 0.5em;
+  position: relative;
+
+  &__icon {
+    @include flexBox;
+    font-size: 1.5em;
+    font-weight: 100;
+    position: relative;
+    z-index: 1;
+
+    &--intro::before {
+      content: '';
+      position: absolute;
+      width: 1.2em;
+      height: 1.2em;
+      border-radius: 5em;
+      left: -0.5em;
+      z-index: -1;
+      background-color: $accent;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+}
+
+.philosophy {
+  &__picture {
+  }
+
+  &__img {
+  }
+
+  &__wrapper {
+  }
+
+  &__container {
+  }
+
+  &__info {
+  }
+
+  &__heading {
+  }
+
+  &__paragraph {
+  }
+
+  &__picture {
+  }
+
+  &__img {
+  }
+}
+
+.link {
+  &__text {
+  }
+
+  &__icon {
+  }
+
+  &__arrow {
+  }
+}
+
+.aside {
+}
+
+.carrousel {
+  &__galery {
+  }
+
+  &__picture {
+  }
+
+  &__img {
+  }
+
+  &__picture {
+  }
+
+  &__img {
+  }
+
+  &__picture {
+  }
+
+  &__img {
+  }
+
+  &__controls {
+  }
+
+  &__dot {
+  }
+
+  &__dot {
+  }
+}
+
+.stats {
+  &__container {
+  }
+
+  &__num {
+  }
+
+  &__text {
+  }
+}
